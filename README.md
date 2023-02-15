@@ -1,19 +1,20 @@
 ###### EUID ╳ Likelion
 
-# React 엘리먼트 vs. 컴포넌트
+# JSX & React
 
 학습 저장소 자료 복사 ([degit](https://github.com/Rich-Harris/degit#readme) 활용)
 
 ```sh
-degit yamoo9/likelion-react#02-component-and-props 02-component-and-props
+degit yamoo9/likelion-react#03-jsx-in-depth 03-jsx-in-depth
 ```
 
 ## 학습 목표
 
-React 엘리먼트와 컴포넌트에 대해 이해하고 활용하는 방법을 학습합니다.
+XML과 유사한 문법을 제공하는 ECMAScript 확장인 JSX에 대해 학습합니다.
 
-- React 엘리먼트 vs. React 컴포넌트
-- 함수의 arguments vs. React의 Props
-- 컴포넌트 타입 (클래스, 함수)
-- React 개발자 도구 (Developer Tools)
-- Web Components API와 비교
+- React 그리고 JSX
+- JSX vs. HTML 구조 설계
+- JSX의 역할 (creating React Element)
+- JSX 컴파일러
+- Babel
+- TypeScript
