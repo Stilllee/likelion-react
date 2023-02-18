@@ -1,6 +1,7 @@
 import LogIn from './pages/LogIn.js';
 import Browse from './pages/Browse.js';
-import Home from './pages/Home.js';
+import EventHandling from './pages/EventHandling.js';
+import DescriptionListRendering from './pages/DescriptionListRendering.js';
 
 class App extends React.Component {
   state = {
@@ -29,7 +30,14 @@ class App extends React.Component {
   };
 
   render() {
-    const { isLoading, isToggle, isPaid, headline, hasError } = this.state;
+    const { 
+      isLoading, 
+      isToggle, 
+      isPaid, 
+      headline, 
+      hasError, 
+      likeLionMembers 
+    } = this.state;
 
     if (isLoading) {
       return <div role="alert">데이터 로딩 중...</div>;
@@ -39,18 +47,21 @@ class App extends React.Component {
       return <div role="alert">{hasError.message}</div>;
     }
 
-    return <Home />;
-
     return (
       <div className="App">
         <h1>{headline}</h1>
-        <button type="button" onClick={this.handleChangeHeadline}>
+
+        <DescriptionListRendering />
+
+        {/* <EventHandling /> */}
+
+        {/* <button type="button" onClick={this.handleChangeHeadline}>
           {isToggle ? '오리지널 헤드라인으로 변경' : '뉴 헤드라인으로 변경'}
         </button>
 
         <LogIn />
 
-        {isPaid && <Browse />}
+        {isPaid && <Browse />} */}
       </div>
     );
   }

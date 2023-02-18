@@ -1,4 +1,4 @@
-function Home() {
+function EventHandling() {
   var handlePreventDefault = function handlePreventDefault(e) {
     e.preventDefault();
   };
@@ -14,4 +14,4 @@ function Home() {
     rel: "noreferrer noopener"
   }, "react")))));
 }
-export default Home;
+export default EventHandling;
