@@ -2,8 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  console.log('rendering App Component');
-
   return (
     <div className="App">
       <header className="App-header">
